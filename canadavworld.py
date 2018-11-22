@@ -52,5 +52,5 @@ print('processed', line_count, 'rows of data')
 
 # filter 2014 based on gender
 #
-# plot on a pie chart mn vs women =>
+# plot on a pie chart men vs women =>
 # how many medals for each as a percentage og the total
