@@ -2,10 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
  
 # data to plot
-n_groups = 3
-means_menwomen = (90, 55, 40)
-means_silver = (85, 62, 54)
-means_bronze = (55, 50, 40)
+n_groups = 6
+means_men = (4, 0, 1, 1, 1, 1)
+means_women = (0, 1, 1, 1, 2, 2)
  
 # create plot
 fig, ax = plt.subplots()
@@ -13,23 +12,20 @@ index = np.arange(n_groups)
 bar_width = 0.35
 opacity = 0.8
  
-rects1 = plt.bar(index, means_menwomen, bar_width,
+rects1 = plt.bar(index, means_men, bar_width,
                  alpha=opacity,
                  color='b',
-                 label='MenWomen')
+                 label='Men')
  
-rects2 = plt.bar(index + bar_width, means_silver, bar_width,
+rects2 = plt.bar(index + bar_width, means_women, bar_width,
                  alpha=opacity,
                  color='g',
-                 label='Silver')
-rects3 = plt.bar(index + bar_width, means_bronze, bar_width,
-                 alpha=opacity,
-                 color='y',
-                 label='bronze'
-plt.xlabel('Medals')
-plt.ylabel('Number of medals')
-plt.title('Medals won by men and women')
-plt.xticks(index + bar_width, ('Gold', 'Silver', 'Bronze'))
+                 label='Women')
+ 
+plt.xlabel('Years')
+plt.ylabel('No. of medals')
+plt.title('Medals won by Men and Women')
+plt.xticks(index + bar_width, ('1994', '1998', '2002', '2006', '2010', '2014'))
 plt.legend()
  
 plt.tight_layout()
