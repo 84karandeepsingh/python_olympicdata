@@ -52,6 +52,6 @@ explode = (0.1, 0.1, 0.1)
 
 plt.pie(sizes, explode=explode, colors=colors, autopct='%1.1f%%', shadow=True, startangle=140)
 plt.legend(labels, loc=1)
-plt.title("Medal wins - Australia Medal Counts")
+plt.title("Medal wins - Canada Medal Counts")
 plt.xlabel("Medal Counts Since 1994")
 plt.show()
