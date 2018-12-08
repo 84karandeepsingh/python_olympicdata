@@ -1,13 +1,13 @@
 from pylab import *
  
-name = [luge, Skating, Skiing]
-pop_bronze = [1, 2, 2]
-pop_gold = [0, 2, 5]
-pop_silver = [4, 4, 1]
-plt.plot(year, pop_bronze, color='brown')
-plt.plot(year, pop_gold, color='yellow')
-plt.plot(year, pop_silver, color='silver')
-plt.xlabel('name')
+year = [1956, 1960, 1964]
+pop_luge = [0, 0, 5]
+pop_skating = [0, 4, 3]
+pop_skiing = [2, 5, 2]
+plt.plot(year, pop_luge, color='green')
+plt.plot(year, pop_skating, color='black')
+plt.plot(year, pop_skiing, color='orange')
+plt.xlabel('Years')
 plt.ylabel('No. of medals')
-plt.title('Medals won by categories')
+plt.title('Medals won by sport')
 plt.show()
